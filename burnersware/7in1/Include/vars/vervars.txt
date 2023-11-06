@@ -1,0 +1,16 @@
+5.56
+3.60
+3.04
+2.56
+2.59
+2.05
+2.04
+2.14
+global
+fish
+power
+summon
+enhance
+bard
+party
+provoke

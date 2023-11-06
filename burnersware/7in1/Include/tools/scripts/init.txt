@@ -1,0 +1,38 @@
+//echo "Init script loaded."
+
+//Set console variables
+console_position 5 100
+console_color 255 255 0 0
+console_displayactivity 1
+console_fadedelay 3500
+
+//Set game variables
+game_forceambientlight 0
+game_ambientlight 255 120 120 120
+game_gamma 50
+game_allowsetcursorpos 1
+
+//Set general variables
+//showfps 1
+
+//Load plugins -- Remove the // from plugins you want to have autoloaded
+load TParty
+//load BloodPace
+//load Distance
+//load IME
+
+
+
+//load IME
+
+//Uncomment or add plugins you want to use
+//Bind keys
+//Bind syntax is "bind <key> <up> <command>
+// ^ represents control- and ! is alt, eg !1 is alt-1
+bind f11 game_forceambientlight
+bind f12 showfps
+bind sysrq screenshot png
+bind ^v paste
+echo "Toggle Lighting = F11 (Bump mapping must be off to work properly)"
+echo "Toggle FPS = F12"
+echo "Paste Clipboard = Ctrl-V"

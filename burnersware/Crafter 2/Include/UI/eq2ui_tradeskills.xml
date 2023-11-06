@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="TradeSkills" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+<Page Activated="true" BackgroundColor="#0000FF" eq2usescomwndcontrols="true" Location="5,110" MaximumSize="371,416" Name="TradeSkills" ScrollExtent="371,416" Size="371,416" alwaysontop="true">
+<Button LocalTooltip="Close" Location="337,3" Name="WC_CloseButton" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.close_button" Tooltip="Close" UserMovable="true"></Button>
+<Button LocalTooltip="Help" Location="321,3" Name="WC_HelpButton" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.help_button" Tooltip="Help" UserMovable="true"></Button>
+<Button LocalTooltip="Window Options" Location="305,3" Name="WC_OptionsButton" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.options_button" Tooltip="Window Options" UserMovable="true"></Button>
+<Page AbsorbsInput="false" Activated="true" BackgroundColor="#0000FF" eq2usescomwndcontrols="true" Location="7,21" MaximumSize="354,520" Name="Recipes" ScrollExtent="354,382" ScrollSize="40,40" Size="354,382" Visible="false">
+<Text AbsorbsInput="false" Color="#F1C362" Font="/Fonts.FontZapf15" LocalText="Filter" Location="21,28" Margin="2,0,2,0" Name="Filter" ScrollExtent="40,23" Size="40,23" TextAlignmentVertical="Center">Filter</Text>
+<Button LocalText="Edit" Location="261,29" Name="FilterEditButton" ScrollExtent="65,24" Size="65,24" Style="/ButtonStyles.text_button_biground">Edit</Button>
+<Dropdownbox Location="60,33" Name="FilterDropdownbox" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="183,16" Size="183,16" Style="/dropdownlist.dropdown_default"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="14,19" Name="FilterFrame" RStyleDefault="/FrameStyles.ThickRounded.rect" ScrollExtent="326,45" Size="326,45"/>
+<Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#423F36" Location="13,18" Name="FilterBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="326,44" Size="326,44"/>
+<Button LocalText="Recipe" Location="14,67" Name="Sort0" ScrollExtent="215,18" Size="215,18" Style="/ButtonStyles.invisible">Recipe</Button>
+<Button LocalText="Difficulty" Location="229,67" Name="Sort1" ScrollExtent="94,18" Size="94,18" Style="/ButtonStyles.invisible">Difficulty</Button>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="11,64" Name="Box ListTop" RStyleDefault="/rectlist.win_plain" ScrollExtent="315,24" Size="315,24"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="13,86" Name="Box List" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="314,246" Size="314,246"/>
+<Page AbsorbsInput="false" BackgroundColor="#2D251C" BackgroundOpacity="1.000" Location="15,88" Name="ScrollPage" ScrollExtent="308,242" ScrollSize="40,40" Size="308,242">
+<Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="1,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Text Font="/Fonts.FontZapf15" LocalText="Missing item name" Location="37,-1" Name="row Name" ScrollExtent="186,32" Size="186,32" TextAlignmentVertical="Center">Missing item name</Text>
+<Text Font="/Fonts.FontZapf15" LocalText="Unknown" Location="214,0" Margin="0,0,4,0" Name="row Difficulty" ScrollExtent="94,32" Size="94,32" TextAlignment="Center" TextAlignmentVertical="Center">Unknown</Text>
+<Image BackgroundColor="#4A404A" BackgroundOpacity="1.000" Name="row Selection" ScrollExtent="308,32" Size="308,32"/>
+</Page>
+<Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" ExtendedTooltip="Scrolls the inv window" Location="326,86" Name="Scroll" ScrollExtent="18,247" Size="18,247" Style="/ScrollStyles.default_vscroll"/>
+<Button LocalText="Create" Location="14,340" Name="CreateButton" ScrollExtent="103,32" Size="103,32" Style="/ButtonStyles.text_button_default">Create</Button>
+</Page>
+<Page AbsorbsInput="false" Activated="true" BackgroundColor="#0000FF" eq2usescomwndcontrols="true" Location="7,21" MaximumSize="354,520" Name="RecipeFilter" ScrollExtent="354,382" Size="354,382" Visible="false">
+<TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" DisabledTextStyle="/Fonts.FontZapf15" Name="InputStyle" NormalTextStyle="/Fonts.FontZapf15" SelectedTextStyle="/Fonts.FontZapf15" SelectionColor="#4A404A" SelectionOpacity="1.000" TextColor="#FFFFFF" TextPadding="3,2,3,0"/>
+<Text AbsorbsInput="false" Color="#F1C362" Font="/Fonts.FontZapf15" LocalText="Filter" Location="21,28" Margin="2,0,2,0" Name="Filter" PackLocation="top,left" PackLocationProp="0021/0001,0028/0001" PackSize="fixed, fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="52,23" Size="52,23" TextAlignmentVertical="Center">Filter</Text>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" GetsInput="false" Location="60,25" Name="FilternameFrame" PackLocation="absolute,absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="138,30" Size="138,30"/>
+<Textbox BackgroundOpacity="0.224" Cursor="/Cursor.Text" Location="63,30" Name="NameTextbox" PackLocation="absolute,absolute" ScrollExtent="131,24" Size="131,24" Style="InputStyle"></Textbox>
+<Button LocalText="Clone" Location="204,28" Name="CloneButton" ScrollExtent="65,24" Size="65,24" Style="/ButtonStyles.text_button_biground">Clone</Button>
+<Button LocalText="Delete" Location="269,28" Name="DeleteButton" ScrollExtent="65,24" Size="65,24" Style="/ButtonStyles.text_button_biground">Delete</Button>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="14,19" Name="FilterFrame" RStyleDefault="/FrameStyles.ThickRounded.rect" ScrollExtent="326,45" Size="326,45"/>
+<Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#423F36" Location="13,18" Name="FilterBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="326,43" Size="326,43"/>
+<Page AbsorbsInput="false" BackgroundColor="#00FFFF" Location="16,67" Name="FilterPage" PackLocation="top,left" PackLocationProp="0016/0001,0067/0001" PackSize="fixed,fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="307,185" Size="307,185">
+<DataSource Name="FilterDataSource">
+<Data Name="Finish" text="Finish"/>
+<Data Name="Refined" text="Refine"/>
+</DataSource>
+<Text Color="#F1C362" Font="/Fonts.FontZapf18" LocalText="Process" Location="11,10" Name="FilterTitle" PackLocation="cfc,cfc" PackLocationProp="-057/0001,-072/0001" ScrollExtent="171,21" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="171,21" TextAlignmentVertical="Center">Process</Text>
+<Button LocalText="Clear" Location="195,9" Name="ClearButton" PackLocation="center, top" PackLocationProp="0042/0001,0009/0001" ScrollExtent="83,24" Size="83,24" Style="/ButtonStyles.text_button_biground">Clear</Button>
+<List BackgroundColor="#2D251C" DataSource="FilterDataSource" Location="12,39" Margin="3,0,3,0" MinimumScrollExtent="263,34" Name="FilterList" ScrollExtent="263,129" Size="263,129" Style="/listboxlist.default_list"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" Location="8,36" Name="ListFrame" PackLocation="cfc,cfc" PackLocationProp="-010/0001,0011/0001" RStyleDefault="/rectlist.win_plain" ScrollExtent="271,135" Size="271,135"/>
+<Scrollbar ArrowPressSound="sounds/button" Control="FilterList" ExtendedTooltip="Scrolls the listing of replies." Location="279,37" Name="ListScroll" PackLocation="cfc,cfc" PackLocationProp="0134/0001,0011/0001" ScrollExtent="17,133" Size="17,133" Style="/ScrollStyles.default_vscroll"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" Location="3,3" Name="FilterPageFrame" PackLocation="cfc,cfc" PackLocationProp="-001/0001,-002/0001" RStyleDefault="/FrameStyles.ThickRounded.rect" ScrollExtent="299,174" Size="299,174"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Color="#262422" Enabled="false" Location="3,3" Name="FilterPageBkg" PackLocation="cfc,cfc" PackLocationProp="-001/0001,-002/0001" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="299,174" Size="299,174"/>
+</Page>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="14,65" Name="Box List" PackLocation="top,left" PackLocationProp="0014/0001,0065/0001" PackSize="fixed,fixed" PackSizeProp="0002/0003,0002/0003" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="311,267" Size="311,267"/>
+<Page AbsorbsInput="false" BackgroundColor="#262422" BackgroundOpacity="1.000" Location="16,67" Name="ScrollPage" PackLocation="top,left" PackLocationProp="0016/0001,0067/0001" PackSize="fixed,fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="305,263" ScrollSize="40,40" Size="305,263"/>
+<Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" ExtendedTooltip="Scrolls the recipe filter." Location="324,65" Name="Scroll" PackLocation="top,left" PackLocationProp="0324/0001,0065/0001" PackSize="fixed,fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="18,267" Size="18,267" Style="/ScrollStyles.default_vscroll"/>
+<Button LocalText="Cancel" Location="237,340" Name="CancelButton" PackLocation="top,left" PackLocationProp="0237/0001,0340/0001" PackSize="fixed, fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="103,32" Size="103,32" Style="/ButtonStyles.text_button_default">Cancel</Button>
+<Button LocalText="OK" Location="14,340" Name="OKButton" PackLocation="top,left" PackLocationProp="0014/0001,0340/0001" PackSize="fixed, fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="103,32" Size="103,32" Style="/ButtonStyles.text_button_default">OK</Button>
+</Page>
+<Page AbsorbsInput="false" Activated="true" eq2usescomwndcontrols="true" Location="7,21" Name="Prepare" ScrollExtent="354,382" Size="354,382" Visible="false">
+<Icon BackgroundTint="#000000" IconStyle="/IconStyles.tradeskill" Location="26,25" MouseOverColor="#FFFF00" Name="ProductIcon" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="Essence of Righteous Blow (Apprentice III)" Location="63,31" MaxLines="1" Name="RecipeName" ScrollExtent="272,36" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="272,23" UserScrollable="false">Essence of Righteous Blow (Apprentice III)</Text>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf15" LocalText="Technique" Location="122,45" Name="TechniqueValue" ScrollExtent="116,17" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="116,17" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#EADFB3">Technique</Text>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="14,19" Name="TopFrame" RStyleDefault="/FrameStyles.ThickRounded.rect" ScrollExtent="326,45" Size="326,45"/>
+<Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#423F36" Location="13,18" Name="TopBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="326,44" Size="326,44"/>
+<Page Location="14,65" Name="SummaryPage" ScrollExtent="325,311" Size="325,311" Visible="false">
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="Primary" Location="158,23" Name="PCLabel" ScrollExtent="61,20" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="61,20" TextAlignmentVertical="Center" TextColor="#1F44FF">Primary</Text>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf15" LocalText="Raw feysteel, adasf ad.,asdfasd faasdfasd fasdf dad" Location="47,11" MaxLines="1" Name="PCDesc" ScrollExtent="182,30" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="182,16" TextColor="#EADFB3">Raw feysteel, adasf ad.,asdfasd faasdfasd fasdf dad</Text>
+<Icon BackgroundTint="#000000" Eq2MouseOverColor="#FFFF00" IconStyle="/IconStyles.tradeskill" Location="11,11" MouseOverRect="84,84,126,126" Name="PCIcon" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="1 / 1" Location="56,25" MaxLines="1" Name="PCCount" ScrollExtent="90,22" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="90,22" TextColor="#6FEA6C">1 / 1</Text>
+<Button LocalText="Choose" Location="233,15" Name="PCChoose" ScrollExtent="83,24" Size="83,24" Style="/ButtonStyles.text_button_biground">Choose</Button>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Color="#262422" DragAccepts="icon" Enabled="false" GetsInput="false" Location="7,7" Name="PCBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="312,40" Size="312,40"/>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="Secondary" Location="150,70" Name="BCLabel" ScrollExtent="78,24" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="78,24" TextAlignmentVertical="Center" TextColor="#1F44FF">Secondary</Text>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf15" LocalText="Raw threadbare or roots or other stuff" Location="47,58" MaxLines="1" Name="BCDesc1" ScrollExtent="182,30" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="182,16" TextColor="#EADFB3">Raw threadbare or roots or other stuff</Text>
+<Icon BackgroundTint="#000000" Eq2MouseOverColor="#FFFF00" IconStyle="/IconStyles.tradeskill" Location="11,58" MouseOverRect="84,84,126,126" Name="BCIcon1" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="1 / 1" Location="56,72" MaxLines="1" Name="BCCount1" ScrollExtent="90,22" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="90,22" TextColor="#6FEA6C">1 / 1</Text>
+<Button LocalText="Choose" Location="233,62" Name="BCChoose1" ScrollExtent="83,24" Size="83,24" Style="/ButtonStyles.text_button_biground">Choose</Button>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf15" LocalText="test bc desc" Location="47,98" MaxLines="1" Name="BCDesc2" ScrollExtent="182,16" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="182,16" TextColor="#EADFB3">test bc desc</Text>
+<Icon BackgroundTint="#000000" Eq2MouseOverColor="#FFFF00" IconStyle="/IconStyles.tradeskill" Location="11,98" MouseOverRect="84,84,126,126" Name="BCIcon2" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="2 / 2" Location="56,112" MaxLines="1" Name="BCCount2" ScrollExtent="140,22" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="140,22" TextColor="#6FEA6C">2 / 2</Text>
+<Button LocalText="Choose" Location="233,102" Name="BCChoose2" ScrollExtent="83,24" Size="83,24" Style="/ButtonStyles.text_button_biground">Choose</Button>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf15" LocalText="test bc desc" Location="47,138" MaxLines="1" Name="BCDesc3" ScrollExtent="182,16" Size="182,16" TextColor="#EADFB3">test bc desc</Text>
+<Icon BackgroundTint="#000000" Eq2MouseOverColor="#FFFF00" IconStyle="/IconStyles.tradeskill" Location="11,138" MouseOverRect="84,84,126,126" Name="BCIcon3" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="2 / 3" Location="56,152" MaxLines="1" Name="BCCount3" ScrollExtent="140,22" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="140,22" TextColor="#FF3030">2 / 3</Text>
+<Button LocalText="Choose" Location="233,142" Name="BCChoose3" ScrollExtent="83,24" Size="83,24" Style="/ButtonStyles.text_button_biground">Choose</Button>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf15" LocalText="test bc desc" Location="47,178" MaxLines="1" Name="BCDesc4" ScrollExtent="182,16" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="182,16" TextColor="#EADFB3">test bc desc</Text>
+<Icon BackgroundTint="#000000" Eq2MouseOverColor="#FFFF00" IconStyle="/IconStyles.tradeskill" Location="11,178" MouseOverRect="84,84,126,126" Name="BCIcon4" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="4 / 4" Location="56,192" MaxLines="1" Name="BCCount4" ScrollExtent="140,22" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="140,22" TextColor="#6FEA6C">4 / 4</Text>
+<Button LocalText="Choose" Location="233,182" Name="BCChoose4" ScrollExtent="83,24" Size="83,24" Style="/ButtonStyles.text_button_biground">Choose</Button>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Color="#262422" DragAccepts="icon" Enabled="false" GetsInput="false" Location="7,54" Name="BCBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="312,160" Size="312,160"/>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="Fuel" Location="142,237" Name="FuelLabel" ScrollExtent="86,24" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="86,24" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#1F44FF">Fuel</Text>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf15" LocalText="test fc desc" Location="47,225" MaxLines="1" Name="FuelDesc" ScrollExtent="182,16" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="182,16" TextColor="#EADFB3">test fc desc</Text>
+<Icon BackgroundTint="#000000" Eq2MouseOverColor="#FFFF00" IconStyle="/IconStyles.tradeskill" Location="11,225" MouseOverRect="84,84,126,126" Name="FuelIcon" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="200 / 200" Location="56,239" MaxLines="1" Name="FuelCount" ScrollExtent="78,22" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="78,22" TextColor="#6FEA6C">200 / 200</Text>
+<Button BackgroundColor="#FFFFFF" LocalText="Choose" Location="233,229" Name="FuelChoose" ScrollExtent="83,24" Size="83,24" Style="/ButtonStyles.text_button_biground">Choose</Button>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Color="#262422" DragAccepts="icon" Enabled="false" GetsInput="false" Location="7,221" Name="FuelBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="312,40" Size="312,40"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="ComponentFrame" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="328,267" Size="328,267"/>
+<Page AbsorbsInput="false" BackgroundColor="#2D251C" BackgroundOpacity="1.000" Location="2,2" Name="ComponentBkg" ScrollExtent="322,263" Size="322,263"/>
+<Button LocalText="Cancel" Location="223,275" Name="CancelButton" ScrollExtent="103,32" Size="103,32" Style="/ButtonStyles.text_button_default">Cancel</Button>
+<Button LocalText="Begin" Location="0,275" Name="BeginButton" ScrollExtent="103,32" Size="103,32" Style="/ButtonStyles.text_button_default">Begin</Button>
+</Page>
+<Page Location="14,65" Name="ChoosePage" ScrollExtent="325,311" Size="325,311">
+<Text AbsorbsInput="false" Color="#F1C362" Font="/Fonts.FontZapf18" LocalText="Select components to use" Name="ChooseLabel" ScrollExtent="325,20" Size="325,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#EADFB3">Select components to use</Text>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="0,22" Name="AvailableTopFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="308,22" Size="308,22">
+<Text AbsorbsInput="false" BackgroundOpacity="1.000" Font="/Fonts.FontZapf15" LocalText="Available Items" Location="3,3" Margin="2,0,2,0" Name="AvailableTitle" ScrollExtent="302,16" Size="302,16" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#EADFB3">Available Items</Text>
+</Page>
+<Page AbsorbsInput="false" LocalTooltip="Double-click to move an item to the selected items list.  (Hold shift to only move one)" Location="0,43" Name="AvailablePage" ScrollExtent="329,101" Size="329,101" Tooltip="Double-click to move an item to the selected items list.  (Hold shift to only move one)">
+<Page AbsorbsInput="false" Location="4,2" Name="ScrollPage" ScrollExtent="300,95" Size="300,95">
+<Icon BackGlowColor="#FFFF80" BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="1,1" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Text Font="/Fonts.FontZapf15" LocalText="Missing item name" Location="40,0" Name="row Item Name" ScrollExtent="244,32" Size="244,32" TextAlignmentVertical="Center">Missing item name</Text>
+</Page>
+<Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" ExtendedTooltip="Scrolls the inv window" Location="309,1" Name="Scroll" ScrollExtent="17,101" Size="17,101" Style="/ScrollStyles.default_vscroll"/>
+<Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,-1" Name="ScrollFrame" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="307,101" Size="307,101"/>
+<Page AbsorbsInput="false" BackgroundColor="#2D251C" BackgroundOpacity="1.000" Location="4,3" Name="Bkg" ScrollExtent="300,96" Size="300,96"/>
+</Page>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="0,145" Name="SelectedTopFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="308,23" Size="308,23">
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf15" LocalText="Selected Items" Location="0,3" Margin="2,0,2,0" Name="SelectedTitle" ScrollExtent="178,16" Size="178,16" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#EADFB3">Selected Items</Text>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf15" LocalText="2 / 2" Location="180,3" Name="ComponentCount" ScrollExtent="128,16" Size="128,16" TextAlignmentVertical="Center" TextColor="#88FF88">2 / 2</Text>
+</Page>
+<Page AbsorbsInput="false" ExtendedTooltip="Hold shift to only move one" LocalTooltip="Double-click to move an item to the available items list.  (Hold shift to only move one)" Location="0,166" Name="SelectedPage" ScrollExtent="329,101" Size="329,101" Tooltip="Double-click to move an item to the available items list.  (Hold shift to only move one)">
+<Page AbsorbsInput="false" Location="4,3" Name="ScrollPage" ScrollExtent="300,95" Size="300,95">
+<Icon BackGlowColor="#FFFF80" BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="1,1" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Text Font="/Fonts.FontZapf15" LocalText="Missing item name" Location="40,0" Name="row Item Name" ScrollExtent="244,32" Size="244,32" TextAlignmentVertical="Center">Missing item name</Text>
+</Page>
+<Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" ExtendedTooltip="Scrolls the inv window" Location="309,1" Name="Scroll" ScrollExtent="17,101" Size="17,101" Style="/ScrollStyles.default_vscroll"/>
+<Page AbsorbsInput="false" BackgroundColor="#39352C" BackgroundOpacity="1.000" Location="2,0" Name="ScrollFrame" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="307,101" Size="307,101"/>
+<Page AbsorbsInput="false" BackgroundColor="#2D251C" BackgroundOpacity="1.000" Location="4,3" Name="Bkg" ScrollExtent="300,96" Size="300,96"/>
+</Page>
+<Text AbsorbsInput="false" Color="#C7C7C7" Font="/Fonts.FontZapf15" LocalText="Status Text" Location="104,279" Name="StatusText" ScrollExtent="118,24" Size="118,24" TextAlignment="Center" TextAlignmentVertical="Center">Status Text</Text>
+<Button LocalText="Ok" Location="0,275" Name="OkButton" ScrollExtent="103,32" Size="103,32" Style="/ButtonStyles.text_button_default">Ok</Button>
+<Button LocalText="Cancel" Location="223,275" Name="CancelButton" ScrollExtent="103,32" Size="103,32" Style="/ButtonStyles.text_button_default">Cancel</Button>
+</Page>
+</Page>
+<Page AbsorbsInput="false" eq2usescomwndcontrols="true" Location="7,21" Name="Create" ScrollExtent="354,382" Size="354,382">
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf15" LocalText="Technique" Location="122,45" Name="TechniqueValue" ScrollExtent="116,17" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="116,17" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#EADFB3">Technique</Text>
+<Text AbsorbsInput="false" DynamicData="/GameData.Self.Health" Font="/Fonts.FontZapf15" LocalText="100%" Location="298,293" Name="HealthText" ScrollExtent="33,19" ShadowStyle="/ShadowStyles.Outline1" Size="33,19" TextAlignment="Right"></Text>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" DragAccepts="icon" Enabled="false" GetsInput="false" Location="80,292" Name="HealthFrame" RStyleDefault="/FrameStyles.ThinBevelled.rect" ScrollExtent="207,22" Size="207,22"/>
+<Image AbsorbsInput="false" Location="80,293" Name="HealthBubblesOverlay" ScrollExtent="206,17" Size="206,17" SourceRect="266,183,377,189" SourceResource="/images/window_elements_generic.dds"/>
+<Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#FE0417" DynamicData="/GameData.Self.Health" DynamicDataFilter="FFFB" Location="83,294" Name="HealthBar" PackLocation="top,left" PackLocationProp="0083/0001,0294/0001" Progress="0.500" ScrollExtent="200,15" Size="200,15" Style="/progressbarlist.progress_default"/>
+<Image AbsorbsInput="false" BackgroundColor="#440000" BackgroundOpacity="0.800" Location="83,294" Name="HealthBarBkg" ScrollExtent="200,15" Size="200,15"/>
+<Text AbsorbsInput="false" DynamicData="/GameData.Self.Power" Font="/Fonts.FontZapf15" LocalText="100%" Location="298,315" Name="ManaText" ScrollExtent="33,19" ShadowStyle="/ShadowStyles.Outline1" Size="33,19" TextAlignment="Right"></Text>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" DragAccepts="icon" Enabled="false" GetsInput="false" Location="80,313" Name="ManaFrame" RStyleDefault="/FrameStyles.ThinBevelled.rect" ScrollExtent="207,22" Size="207,22"/>
+<Image AbsorbsInput="false" Location="80,314" Name="ManaBubblesOverlay" ScrollExtent="206,17" Size="206,17" SourceRect="266,183,377,189" SourceResource="/images/window_elements_generic.dds"/>
+<Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Self.Power" DynamicDataFilter="FFFB" Location="83,315" Name="ManaBar" PackLocation="top,left" PackLocationProp="0083/0001,0315/0001" Progress="1.000" ScrollExtent="200,15" Size="200,15" Style="/progressbarlist.progress_default"/>
+<Image AbsorbsInput="false" BackgroundColor="#000044" BackgroundOpacity="0.800" Location="83,315" Name="ManaBarBkg" ScrollExtent="200,15" Size="200,15"/>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="Essence of Righteous Blow (Apprentice III)" Location="63,31" MaxLines="1" Name="RecipeName" ScrollExtent="272,36" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="272,23" UserScrollable="false">Essence of Righteous Blow (Apprentice III)</Text>
+<Icon BackgroundTint="#000000" Eq2MouseOverColor="#FFFF00" IconStyle="/IconStyles.tradeskill" Location="26,25" MouseOverRect="84,84,126,126" Name="ProductIcon" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Text Font="/Fonts.FontZapf18" LocalText="4" Location="318,235" Name="ElaborateLabel" ScrollExtent="21,21" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="21,21">4</Text>
+<Icon BackgroundTint="#000000" Eq2MouseOverColor="#FFFF00" IconStyle="/IconStyles.tradeskill" Location="26,228" MouseOverRect="84,84,126,126" Name="ElaborateIcon" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Progressbar BackgroundColor="#000000" BackgroundTint="#000000" BarBackgroundColor="#000000" Color="#5555AA" Location="63,247" Name="ElaborateStateBar" Progress="1.000" ScrollExtent="240,10" Size="240,10" Style="/progressbarlist.progress_grayscale_default"/>
+<Image AbsorbsInput="false" Location="63,246" Name="ElaborateStateFrame" ScrollExtent="242,12" Size="242,12" SourceRect="381,359,506,376" SourceResource="images/window_elements_specific.dds"/>
+<Progressbar BackgroundColor="#000000" BackgroundTint="#000000" BarBackgroundColor="#000000" Color="#FFFF11" Location="63,231" Name="ElaborateDurabilityBar" Progress="0.800" ScrollExtent="240,10" Size="240,10" Style="/progressbarlist.progress_grayscale_default"/>
+<Image AbsorbsInput="false" Location="63,230" Name="ElaborateDurabilityFrame" ScrollExtent="242,12" Size="242,12" SourceRect="381,359,506,376" SourceResource="images/window_elements_specific.dds"/>
+<Text Font="/Fonts.FontZapf18" LocalText="3" Location="318,195" Name="WorkedLabel" ScrollExtent="21,21" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="21,21">3</Text>
+<Icon BackgroundTint="#000000" Eq2MouseOverColor="#FFFF00" IconStyle="/IconStyles.tradeskill" Location="26,188" MouseOverRect="84,84,126,126" Name="WorkedIcon" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Progressbar BackgroundColor="#000000" BackgroundTint="#000000" BarBackgroundColor="#000000" Color="#5555AA" Location="63,207" Name="WorkedStateBar" Progress="1.000" ScrollExtent="240,10" Size="240,10" Style="/progressbarlist.progress_grayscale_default"/>
+<Image AbsorbsInput="false" Location="63,206" Name="WorkedStateFrame" ScrollExtent="242,12" Size="242,12" SourceRect="381,359,506,376" SourceResource="images/window_elements_specific.dds"/>
+<Progressbar BackgroundColor="#000000" BackgroundTint="#000000" BarBackgroundColor="#000000" Color="#FFFF11" Location="63,191" Name="WorkedDurabilityBar" Progress="0.800" ScrollExtent="240,10" Size="240,10" Style="/progressbarlist.progress_grayscale_default"/>
+<Image AbsorbsInput="false" Location="63,190" Name="WorkedDurabilityFrame" ScrollExtent="242,12" Size="242,12" SourceRect="381,359,506,376" SourceResource="images/window_elements_specific.dds"/>
+<Text Font="/Fonts.FontZapf18" LocalText="2" Location="318,155" Name="FormedLabel" ScrollExtent="21,21" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="21,21">2</Text>
+<Icon BackgroundTint="#000000" Eq2MouseOverColor="#FFFF00" IconStyle="/IconStyles.tradeskill" Location="26,148" MouseOverRect="84,84,126,126" Name="FormedIcon" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Progressbar BackgroundColor="#000000" BackgroundTint="#000000" BarBackgroundColor="#000000" Color="#5555AA" Location="63,167" Name="FormedStateBar" Progress="1.000" ScrollExtent="240,10" Size="240,10" Style="/progressbarlist.progress_grayscale_default"/>
+<Image AbsorbsInput="false" Location="63,166" Name="FormedStateFrame" ScrollExtent="242,12" Size="242,12" SourceRect="381,359,506,376" SourceResource="images/window_elements_specific.dds"/>
+<Progressbar BackgroundColor="#000000" BackgroundTint="#000000" BarBackgroundColor="#000000" Color="#FFFF11" Location="63,151" Name="FormedDurabilityBar" Progress="0.800" ScrollExtent="240,10" Size="240,10" Style="/progressbarlist.progress_grayscale_default"/>
+<Image AbsorbsInput="false" Location="63,150" Name="FormedDurabilityFrame" ScrollExtent="242,12" Size="242,12" SourceRect="381,359,506,376" SourceResource="images/window_elements_specific.dds"/>
+<Text Font="/Fonts.FontZapf18" LocalText="1" Location="318,115" Name="SimpleLabel" ScrollExtent="21,21" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="21,21">1</Text>
+<Icon BackgroundTint="#000000" Eq2MouseOverColor="#FFFF00" IconStyle="/IconStyles.tradeskill" Location="26,108" MouseOverRect="84,84,126,126" Name="SimpleIcon" ScrollExtent="32,32" Size="32,32" TreatAsButton="true"/>
+<Progressbar BackgroundColor="#000000" BackgroundTint="#000000" BarBackgroundColor="#000000" Color="#5555AA" Location="64,127" Name="SimpleStateBar" Progress="1.000" ScrollExtent="240,10" Size="240,10" Style="/progressbarlist.progress_grayscale_default"/>
+<Image AbsorbsInput="false" Location="63,126" Name="SimpleStateFrame" ScrollExtent="242,12" Size="242,12" SourceRect="381,359,506,376" SourceResource="images/window_elements_specific.dds"/>
+<Progressbar BackgroundColor="#000000" BackgroundTint="#000000" BarBackgroundColor="#000000" Color="#FFFF11" Location="64,111" Name="SimpleDurabilityBar" Progress="0.800" ScrollExtent="240,10" Size="240,10" Style="/progressbarlist.progress_grayscale_default"/>
+<Image AbsorbsInput="false" Location="63,110" Name="SimpleDurabilityFrame" ScrollExtent="242,12" Size="242,12" SourceRect="381,359,506,376" SourceResource="images/window_elements_specific.dds"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="14,102" Name="BoxFrame" RStyleDefault="/FrameStyles.ThickCornered.rect" ScrollExtent="328,165" Size="328,165"/>
+<Page AbsorbsInput="false" BackgroundColor="#2D251C" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="14,103" Name="BoxBkg" ScrollExtent="326,162" Size="326,162"/>
+<Image AbsorbsInput="false" Location="29,68" Name="DurabilityTick" ScrollExtent="1,9" Size="1,9" SourceRect="381,359,382,376" SourceResource="images/window_elements_specific.dds"/>
+<Image AbsorbsInput="false" Location="29,80" Name="StateTick" ScrollExtent="1,9" Size="1,9" SourceRect="381,359,382,376" SourceResource="images/window_elements_specific.dds"/>
+<Progressbar Color="#FFFF11" Location="29,69" Name="DurabilityBar" Progress="0.500" ScrollExtent="297,7" Size="297,7" Style="/progressbarlist.progress_grayscale_default"/>
+<Image AbsorbsInput="false" Location="28,68" Name="DurabilityFrame" ScrollExtent="299,9" Size="299,9" SourceRect="381,359,506,376" SourceResource="images/window_elements_specific.dds"/>
+<Progressbar BackgroundColor="#000000" BackgroundTint="#000000" BarBackgroundColor="#000000" Color="#5555AA" Location="29,81" Name="StateBar" Progress="1.000" ScrollExtent="297,7" Size="297,7" Style="/progressbarlist.progress_grayscale_default"/>
+<Image AbsorbsInput="false" Location="28,80" Name="StateFrame" ScrollExtent="299,9" Size="299,9" SourceRect="381,359,506,376" SourceResource="images/window_elements_specific.dds"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Color="#8E8882" DragAccepts="icon" Enabled="false" GetsInput="false" Location="22,63" Name="DurabilityStateFrame" RStyleDefault="/FrameStyles.ThinRoundedGreyscale.rect" ScrollExtent="310,31" Size="310,31"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Color="#262422" DragAccepts="icon" Enabled="false" GetsInput="false" Location="22,63" Name="DurabilityStateBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="310,31" Size="310,31"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="14,19" Name="TopFrame" RStyleDefault="/FrameStyles.ThickRounded.rect" ScrollExtent="326,81" Size="326,81"/>
+<Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#423F36" Location="14,19" Name="TopBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="326,81" Size="326,81"/>
+<Page AbsorbsInput="false" BackgroundColor="#FF0000" BackgroundOpacity="1.000" GetsInput="false" Location="17,198" Name="ResultColorPage" ScrollExtent="18,18" Size="18,18" Visible="false"/>
+<Icon AbsorbsInput="false" BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="20,276" MouseOverColor="#FFFF00" Name="EventIcon" ScrollExtent="50,50" Size="50,50" TreatAsButton="true"/>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="Event Name" Location="85,269" Name="EventText" ScrollExtent="254,22" Size="254,22" TextAlignmentVertical="Center"></Text>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" DragAccepts="icon" Enabled="false" GetsInput="false" Location="14,270" Name="EventFrame" RStyleDefault="/FrameStyles.ThickRounded.rect" ScrollExtent="63,63" Size="63,63"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Color="#262422" DragAccepts="icon" Enabled="false" GetsInput="false" Location="14,270" Name="EventBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="63,63" Size="63,63"/>
+<Button LocalText="Repeat" Location="14,340" Name="RepeatButton" ScrollExtent="103,32" Size="103,32" Style="/ButtonStyles.text_button_default">Repeat</Button>
+<Button LocalText="Recipes" Location="126,340" Name="RecipesButton" ScrollExtent="103,32" Size="103,32" Style="/ButtonStyles.text_button_default">Recipes</Button>
+<Button LocalText="Stop" Location="237,340" Name="StopButton" ScrollExtent="103,32" Size="103,32" Style="/ButtonStyles.text_button_default">Stop</Button>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Frame" RStyleDefault="/FrameStyles.win_gold_simple" ScrollExtent="354,380" Size="354,380" Visible="false"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="3,3" Name="WC_Backdrop" ScrollExtent="349,378" Size="349,378" Visible="false"/>
+<Text AbsorbsInput="false" Color="#80FF80" Font="/Fonts.FontZapf18" LocalText="Unknown" Location="80,231" Name="ElaborateText" ScrollExtent="141,27" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="141,27" TextAlignmentVertical="Center">Unknown</Text>
+<Text AbsorbsInput="false" Color="#AAFFAA" Font="/Fonts.FontZapf18" LocalText="Unknown" Location="85,187" Name="WorkedText" ScrollExtent="124,32" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="124,32" TextAlignmentVertical="Center">Unknown</Text>
+<Text AbsorbsInput="false" Color="#D5FFD5" Font="/Fonts.FontZapf18" LocalText="Unknown" Location="92,152" Name="FormedText" ScrollExtent="123,27" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="123,27" TextAlignmentVertical="Center">Unknown</Text>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="Unknown" Location="87,109" Name="SimpleText" ScrollExtent="113,30" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="113,30" TextAlignmentVertical="Center">Unknown</Text>
+</Page>
+<Text AbsorbsInput="false" Font="/Fonts.FontZapf18" LocalText="Recipe Book" Location="14,1" MaxLines="1" Name="WC_Title" ScrollExtent="158,22" Size="158,22" TextAlignment="Center" TextColor="#F1CE02" UserMovable="true">Recipe Book</Text>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="3,0" Name="WC_Titlebar" RStyleDefault="/FrameStyles.title_gold" ScrollExtent="371,30" Size="371,30"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,16" Name="WC_Frame" RStyleDefault="/FrameStyles.win_gold" ScrollExtent="373,400" Size="373,400"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="7,21" Name="WC_Backdrop" RStyleDefault="/FrameStyles.background_gold" ScrollExtent="354,382" Size="354,382"/>
+</Page>
+</Page>

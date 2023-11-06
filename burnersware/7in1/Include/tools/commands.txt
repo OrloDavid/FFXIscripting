@@ -1,0 +1,67 @@
+//Also shown are shorter synonyms under the full command
+
+// GENERAL COMMANDS
+showfps 0/1                                     - Shows or hides FPS counter, 0 = hidden, 1 = visible, no parameter to toggle
+screenshot <bmp/jpg/png> [hide]                 - Takes a screenshot, specifying hide hides Windower from the screenshot.
+wait <seconds>																	- Pauses execution of a command/bind/alias/script for given seconds. Can be decimal.
+	pause <seconds>
+
+// CONSOLE COMMANDS
+console_toggle                                  - Toggles the visibilty of the console
+console_clear                                   - Clears the console buffer
+console_echo "string"                           - Echos string to the console buffer
+console_displayactivity 0/1                     - Sets whether the console displays on new text
+console_fadedelay int                           - Time in milliseconds before the console fades
+console_position float float                    - Sets the console position
+console_color 0-255 0-255 0-255 0-255           - Sets the console color (a,r,g,b) first parameter is optional
+console_exec "file"                             - Executes a console script
+	exec "file"
+
+// GAME COMMANDS
+game_forceambientlight 0/1                      - Forces using specified ambient light, 0 = ignore, 1 = force
+game_ambientlight 0-255 0-255 0-255 0-255       - Set game ambient light (a,r,g,b) first parameter is optional
+game_gamma 0-100                                - Sets game gamma, 50 = normal
+	gamma 0-100
+game_allowsetcursorpos 0/1                      - Sets whether the game is allowed to set the cursor position, 0 = false, 1 = true
+game_minimize                                   - Minimizes the game to the taskbar     
+game_exit                                       - Exits the game to POL (character remains in world like going LD)
+game_quit                                       - Same as game_exit
+game_terminate                                  - Hard exits the game to desktop (not recommended)
+terminate
+
+// KEYBOARD COMMANDS
+keyboard_bind key [up] command                  - Binds a command to a key. Down is assumed, specify up for bind on release of key.
+	bind key [up] command													 	Key modifiers are allowed. ^ is Ctrl, ! is Alt. 
+																									e.g. "bind ^v paste" binds control-v to paste
+keyboard_unbind key [up]                        - Unbinds any commands from a key. down is assumed, specify up for up.
+	unbind key [up]
+alias <alias> command														- e.g. "alias blah wait 5;echo hello" will create a pseudo console command "blah"
+																									can be typed in the console, used in a script, or even put into a bind
+keyboard_sendstring "string"                    - Sends a string to the game 
+	input "string"
+keyboard_type "string"													- This is the old functionality of keyboard_sendstring, this types the string to
+	type "string"																		the chat input bar ingame.
+																									
+keyboard_blockinput 0/1                         - Blocks keyboard input, 0 = unblock, 1 = block
+keyboard_allowmmf 0/1                           - Allows or disables keyboard input via MMF, 0 = disable, 1 = enable
+paste																						- Pastes the contents of the clipboard to the input buffer.
+
+//MOUSE COMMANDS
+mouse_blockinput 0/1                            - Blocks mouse input, 0 = unblock, 1 = block (MAJOR PROBLEMS)
+
+// PLUGIN COMMANDS
+plugin_load "plugin"                            - Loads a plugin dll (.dll is optional, and case is irrelevant)
+	load "plugin"
+plugin_unload "plugin"                          - Unloads a plugin dll
+	unload "plugin"
+toggle "plugin"																	- Will toggle a plugin. Designed to be bound to a key to turn off or on a plugin
+																									on a keystroke.
+
+//WINAMP COMMANDS
+.winamp play                                    - Begins playback
+.winamp stop                                    - Stops playback
+.winamp pause                                   - Pauses playback
+.winamp previous                                - Previous song
+.winamp next                                    - Next song
+.winamp notify 0/1                              - Show song changes, 0 = disable, 1 = enable
+
