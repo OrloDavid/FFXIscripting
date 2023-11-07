@@ -1,34 +1,34 @@
-# FFXI Scripting / Burnersware Original Source Code
+# burnersware FFXI Automation Tools
 
-Welcome to the archival repository for the original code of the FFXI Scripting / Burnersware software.
+Welcome to the official repository for burnersware, a suite of automation tools designed for the legendary MMORPG Final Fantasy XI. This collection encapsulates a journey of innovation, community, and undying nostalgia.
 
-[![FFXI Scripting Website](https://ffxiscripting.com/)](https://ffxiscripting.com/)
-_Automating the game since 2003_
+## Software & Bots
 
-This repository contains the source code of software I created in what seems like several lifetimes ago. I've maintained the code, website, and hosting for years, along with IoCaine for Matt (hammy) Hampton.
+Rogue Tools, exclusively developed by burners, is a conglomeration of hand-coded bots designed to enhance the FFXI gaming experience:
 
-It's always a surprise when someone signs up (and pays) for access, especially considering the site has been around for 20 years as of 2023, and the game it serves is only a year older.
+- **Fishing Bot**: Automates fishing with features like auto-sort and bait management.
+- **Provoke**: A straightforward NM hunting assistant.
+- **Bard**: Automates bard skill leveling.
+- **Enhance**: Aides in leveling WHM/BLM skills.
+- **Summon**: Handles Summoner Bloodpact skill leveling.
+- **Party**: Manages a skill-based support character in a group setting with extensive functionalities.
+- **Power-Leveling**: Operates a high-level healer targeted at an individual, capable of following your character, managing MP/HP, and interpreting chat commands.
 
-### About Final Fantasy XI
+Advanced bots, such as the Power-Leveling bot, are intuitive enough to perform complex tasks, offering a hands-off gaming advantage.
 
-For those unfamiliar, Final Fantasy XI Online (FFXI) was once one of the largest MMORPGs, second only to World of Warcraft, which has since been surpassed by FFXIV.
+## History & Legacy
 
-### The Journey of Development
+In 2003, David Orlo, also known as *burners*, embarked on a coding adventure with FFXI Scripting. What started as a learning project burgeoned into an advanced, user-friendly automation suite. This required rapid scaling of coding prowess, diving into GUI creation when AutoIt's GUI capabilities were still in beta.
 
-When I began working on this project, my knowledge of programming, web design, and hosting was minimal. Learning to code opened up a world of possibilities, and I was determined to create something better, smarter, and undetectable.
+burners also ventured into web development, picking up HTML, CSS, PHP, and MYSQL to craft burnersware.com. During this period, he contributed to fixing the official PHPBB Paypal Integration Mod, which led to the creation of the rebranded and more descriptive FFXIScripting.com.
 
-The first bot was a breakthrough, and as the project expanded, it became clear that a GUI was necessary. At that time, AutoIt didn't have GUI support, except in a beta version. So, I took the plunge and wrote approximately 5,000 lines of code in the beta, which inevitably broke with the release of AutoIt's new version. Despite the setback, this allowed me to release the bots much earlier.
+Joining forces in 2006, Matt Hampton (Hammy) and burners became the dynamic duo behind burnersware. Despite misconceptions of a larger team, it was just them against the world, each with their own software, style, and hobbies - albeit Hammy with his Aston Martin and burners with his arguably cooler bike.
 
-### The Coding Process
+When Fishing System 2.0 rolled out, burnersware's Rogue Hyper Fishing Bot outsmarted Square Enix's anti-botting measures, a testament to the ingenuity and resilience of burnersware. *Viva La burnersware* became the rallying cry, a community bonded over shared knowledge and mutual respect, and a symbol in the form of T-shirts worn with pride, even spotted at a Micro Center in Michigan pre-YouTube fame.
 
-The GUI code was crafted by hand in Scite, a glorified Notepad, with no visual aids—just a lot of math and trial and error, including the creation of those fancy transparent, multi-shaped GUIs that became well-known in the community.
+## burnersware Ethos
 
-As a self-taught programmer, the code reflects my journey from a novice to what I would call a hobbyist programmer. It's far from professional standards at the time, so expect to see multiple `If..Then` statements instead of `Switch` or `Case` statements and a lack of `For..Next` loops where objects should have been used.
+The lowercase *b* in burnersware isn't just a typographical choice; it's a nod to the humility and roots of a project that always aimed to stay grounded, authentic, and true to its community-driven spirit.
 
-### Legacy and Learning
-
-This code stands as a testament to my creativity and ability to leverage the tools at my disposal to create something unique or to solve problems that seemed insurmountable or required a high level of skill and creativity.
-
----
-
-_**Disclaimer:** The usage of bots can violate game Terms of Service and may result in account suspension. Use at your own risk._
+```markdown
+_Viva La burnersware_ - Celebrating a legacy of community-driven innovation in gaming automation.
