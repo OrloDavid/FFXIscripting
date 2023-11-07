@@ -1,36 +1,34 @@
-# FFXIscripting
-Source Code for FFXIscripting / burnersware Rogue Tools &amp; more
+# FFXI Scripting / Burnersware Original Source Code
 
+Welcome to the archival repository for the original code of the FFXI Scripting / Burnersware software.
 
-# Burnersware Bots for Final Fantasy XI
+[![FFXI Scripting Website](https://ffxiscripting.com/)](https://ffxiscripting.com/)
+_Automating the game since 2003_
 
-## What Are Bots and What Are They Used For?
+This repository contains the source code of software I created in what seems like several lifetimes ago. I've maintained the code, website, and hosting for years, along with IoCaine for Matt (hammy) Hampton.
 
-Bots are automated programs designed to perform specific tasks that would otherwise require human intervention. In the context of Final Fantasy XI, bots can be a game-changer.
+It's always a surprise when someone signs up (and pays) for access, especially considering the site has been around for 20 years as of 2023, and the game it serves is only a year older.
 
-Have you ever wished you could keep Final Fantasy XI running to level up while you sleep, eat, or even while you're at work? Burnersware makes that wish a reality by automating tasks in Final Fantasy XI to help you level up skills and **make in-game money (gil)** while you're away from your computer.
+### About Final Fantasy XI
 
-## Why Use Burnersware Bots?
+For those unfamiliar, Final Fantasy XI Online (FFXI) was once one of the largest MMORPGs, second only to World of Warcraft, which has since been surpassed by FFXIV.
 
-- **Stop Wasting Real Money**: Make gil effortlessly instead of buying it with real money.
-- **Get That Expensive Gear**: Earn that piece of 2 million gil armor without spending real cash.
-- **Maximize Your Time**: Never miss out on life's moments; let the bot grind while you're busy.
-- **Stay on Top of Your Game**: Keep your skills maxed for maximum party and personal benefit.
-- **Gain Recognition**: Be known as a dedicated player with maxed-out character stats.
+### The Journey of Development
 
-## User-Friendly
+When I began working on this project, my knowledge of programming, web design, and hosting was minimal. Learning to code opened up a world of possibilities, and I was determined to create something better, smarter, and undetectable.
 
-- **No Programming Needed**: Forget about the hassle of programming or setting up complex bots.
-- **Easy to Use GUI**: Simply download, check some options, set up in-game macros, and you're good to go.
-- **Flexibility**: Use the bots when you need them, turn them off when you don't.
-- **Comprehensive Guides**: We provide complete setup guides with easy-to-follow instructions and pictures.
+The first bot was a breakthrough, and as the project expanded, it became clear that a GUI was necessary. At that time, AutoIt didn't have GUI support, except in a beta version. So, I took the plunge and wrote approximately 5,000 lines of code in the beta, which inevitably broke with the release of AutoIt's new version. Despite the setback, this allowed me to release the bots much earlier.
 
-## Our Promise
+### The Coding Process
 
-- **100% Free of Adware/Spyware**: Your peace of mind is paramount; our software is clean and safe.
+The GUI code was crafted by hand in Scite, a glorified Notepad, with no visual aids—just a lot of math and trial and error, including the creation of those fancy transparent, multi-shaped GUIs that became well-known in the community.
 
-## Get Started
+As a self-taught programmer, the code reflects my journey from a novice to what I would call a hobbyist programmer. It's far from professional standards at the time, so expect to see multiple `If..Then` statements instead of `Switch` or `Case` statements and a lack of `For..Next` loops where objects should have been used.
 
-Ready to dive in? Follow our simple guide to download the software, run it, and enjoy a more relaxed gaming experience with Burnersware Bots for Final Fantasy XI.
+### Legacy and Learning
 
-> **Disclaimer**: Usage of bots can violate game Terms of Service and may lead to account suspension. Use at your own risk.
+This code stands as a testament to my creativity and ability to leverage the tools at my disposal to create something unique or to solve problems that seemed insurmountable or required a high level of skill and creativity.
+
+---
+
+_**Disclaimer:** The usage of bots can violate game Terms of Service and may result in account suspension. Use at your own risk._
